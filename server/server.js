@@ -96,11 +96,8 @@ app.post("/", async (req, res) => {
 
         Si el usuario agradece o hace una pausa, **sigue con el tema** de forma directa sin reiniciar la conversación.
         Responde de manera **concisa y práctica**, enfócate solo en el contenido útil, sin relleno innecesario.
+        El primer mensaje ya esta echo en frontend, solo responde a los mensajes del usuario. que el hola no hace falta.
       `},
-        {
-          role: "system",
-          content: "🌟 ¡Hola! Soy **Kyonix AI**, tu asistente para aumentar tu productividad y convertir tu tiempo en superpoderes 💪⚡. Estoy aquí para ayudarte a lograr tus metas y, de paso, hacer que tu día sea épico. ¿Listo para ponerte en modo productivo? 🚀📅 ¡Vamos a hacerlo! 😎💼"
-        },
         { role: "user", content: prompt }
       ],
     });

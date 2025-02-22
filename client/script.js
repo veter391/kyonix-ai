@@ -109,6 +109,17 @@ const handleSubmit = async e => {
     }
 }
 
+// Agregar el primer mensaje del bot al cargar la página
+document.addEventListener("DOMContentLoaded", () => {
+    const firstMessage = "¡Hi! Soy <span style='color: orange;'>Kyonix AI</span>, tu asistente para hacer que tu productividad suba más rápido que el Wi-Fi. 💪⚡ ¡Listo para convertir tu tiempo en superpoderes y hacer tu día épico? 🚀📅 ¡Vamos a hacerlo! 😎💼";
+    const uniqueId = generateUniqueID();
+
+    chat.innerHTML += chatStripe(true, " ", uniqueId);
+    const messageBox = document.getElementById(uniqueId);
+    chat.scrollTop = chat.scrollHeight; 
+    typeMessage(messageBox, firstMessage);
+});
+
 form.addEventListener('submit', handleSubmit);
 form.addEventListener('keyup', e => {
     if (e.key === 13)
