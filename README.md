@@ -17,6 +17,11 @@ Kyonix AI es un asistente inteligente enfocado en aprendizaje y productividad. �
     ✅ Toma notas automáticas de reuniones o clases.
     ✅ Sugiere hábitos y estrategias para mejorar la organización y el enfoque.
 
+## Demo
+
+Puedes ver la demo del proyecto aquí:
+[Kyonix AI DEMOI](https://kyonix-ai.vercel.app/)
+
 ## 🔹 Características
 - **Gestión de tareas y productividad**: Sugerencias para mejorar la organización y el enfoque.
 - **Estrategias de optimización**: Métodos para administrar mejor el tiempo y los recursos.

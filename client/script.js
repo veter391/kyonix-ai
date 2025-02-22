@@ -5,7 +5,7 @@ import user from './assets/user.svg';
 const form = document.querySelector('form');
 const chat = document.querySelector('#chat_container');
 const textarea = document.querySelector("textarea");
-const server = 'http://localhost:5000';
+const server = 'https://kyonix-ai.onrender.com';
 
 
 textarea.addEventListener("input", function () {
