@@ -93,6 +93,9 @@ app.post("/", async (req, res) => {
         recuerda que el max_tokens es 500,
         y estructuras no siempre tienen que ser iguales.
         y acuerdate de que evitas respuestas vagas o innecesarias, y te enfocas en ser útil y conciso.
+
+        Si el usuario agradece o hace una pausa, **sigue con el tema** de forma directa sin reiniciar la conversación.
+        Responde de manera **concisa y práctica**, enfócate solo en el contenido útil, sin relleno innecesario.
       `},
         { role: "user", content: prompt }
       ],
