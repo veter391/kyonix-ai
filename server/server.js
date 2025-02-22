@@ -11,7 +11,14 @@ const openai = new OpenAI({
 });
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: 'https://kyonix-ai.vercel.app',  // Permitir solicitudes solo desde este dominio o * para permitir desde cualquier dominio
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
+};
+
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.get("/", async (req, res) => {
